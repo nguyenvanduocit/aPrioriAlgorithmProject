@@ -1,0 +1,4 @@
+aPrioriAlgorithmProject
+=======================
+
+aPriori algorithm
