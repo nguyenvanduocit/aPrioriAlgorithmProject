@@ -1,0 +1,1 @@
+..\dist\NCKH_Apriori_file.jar census-income.test census-income_out.test 0.7 0.8

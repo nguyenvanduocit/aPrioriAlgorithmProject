@@ -1,0 +1,71 @@
+Parameters
+Total itemset : 50,000
+minSupport : 0.7
+minConfidence : 0.9
+inFileName : census_LineNo_50000.txt
+
+Frequent 1-itemset :
+country=United_States
+gain=none
+loss=none
+race=White
+salary<=50K
+Frequent 2-itemset  :
+country=United_States,gain=none
+country=United_States,loss=none
+country=United_States,race=White
+gain=none,loss=none
+gain=none,race=White
+gain=none,salary<=50K
+loss=none,race=White
+loss=none,salary<=50K
+Frequent 3-itemset  :
+country=United_States,gain=none,loss=none
+country=United_States,gain=none,race=White
+country=United_States,loss=none,race=White
+gain=none,loss=none,race=White
+gain=none,loss=none,salary<=50K
+Frequent 4-itemset  :
+
+All frequent itemset:
+country=United_States
+country=United_States,gain=none
+country=United_States,gain=none,loss=none
+country=United_States,gain=none,race=White
+country=United_States,loss=none
+country=United_States,loss=none,race=White
+country=United_States,race=White
+gain=none
+gain=none,loss=none
+gain=none,loss=none,race=White
+gain=none,loss=none,salary<=50K
+gain=none,race=White
+gain=none,salary<=50K
+loss=none
+loss=none,race=White
+loss=none,salary<=50K
+race=White
+salary<=50K
+
+Strong Associate Rules
+{country=United_States,gain=none}=>{loss=none} [ supp = 0.78 | conf = 0.948 ]
+{country=United_States,loss=none}=>{gain=none} [ supp = 0.78 | conf = 0.912 ]
+{country=United_States,race=White}=>{gain=none} [ supp = 0.72 | conf = 0.913 ]
+{gain=none,race=White}=>{country=United_States} [ supp = 0.72 | conf = 0.921 ]
+{country=United_States}=>{gain=none} [ supp = 0.823 | conf = 0.916 ]
+{country=United_States,race=White}=>{loss=none} [ supp = 0.749 | conf = 0.95 ]
+{loss=none,race=White}=>{country=United_States} [ supp = 0.749 | conf = 0.921 ]
+{country=United_States}=>{loss=none} [ supp = 0.855 | conf = 0.953 ]
+{race=White}=>{country=United_States} [ supp = 0.788 | conf = 0.922 ]
+{gain=none,race=White}=>{loss=none} [ supp = 0.741 | conf = 0.947 ]
+{loss=none,race=White}=>{gain=none} [ supp = 0.741 | conf = 0.91 ]
+{gain=none,salary<=50K}=>{loss=none} [ supp = 0.706 | conf = 0.968 ]
+{loss=none,salary<=50K}=>{gain=none} [ supp = 0.706 | conf = 0.957 ]
+{salary<=50K}=>{loss=none,gain=none} [ supp = 0.706 | conf = 0.928 ]
+{gain=none}=>{loss=none} [ supp = 0.871 | conf = 0.949 ]
+{loss=none}=>{gain=none} [ supp = 0.871 | conf = 0.913 ]
+{race=White}=>{gain=none} [ supp = 0.782 | conf = 0.914 ]
+{salary<=50K}=>{gain=none} [ supp = 0.729 | conf = 0.958 ]
+{race=White}=>{loss=none} [ supp = 0.814 | conf = 0.952 ]
+{salary<=50K}=>{loss=none} [ supp = 0.737 | conf = 0.969 ]
+Execution time is: 7.532 seconds.

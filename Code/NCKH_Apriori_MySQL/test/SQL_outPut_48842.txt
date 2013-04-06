@@ -1,0 +1,51 @@
+Parameters
+Total itemset : 49,878
+minSupport : 0.7
+minConfidence : 0.9
+
+Frequent 1-itemset :
+country=United_States
+gain=none
+loss=none
+race=White
+salary<=50K
+Frequent 2-itemset  :
+country=United_States,gain=none
+country=United_States,loss=none
+country=United_States,race=White
+gain=none,loss=none
+gain=none,race=White
+gain=none,salary<=50K
+loss=none,race=White
+loss=none,salary<=50K
+Frequent 3-itemset  :
+country=United_States,gain=none,loss=none
+country=United_States,gain=none,race=White
+country=United_States,loss=none,race=White
+gain=none,loss=none,race=White
+gain=none,loss=none,salary<=50K
+Frequent 4-itemset  :
+
+All frequent itemset:
+country=United_States
+country=United_States,gain=none
+country=United_States,gain=none,loss=none
+country=United_States,gain=none,race=White
+country=United_States,loss=none
+country=United_States,loss=none,race=White
+country=United_States,race=White
+gain=none
+gain=none,loss=none
+gain=none,loss=none,race=White
+gain=none,loss=none,salary<=50K
+gain=none,race=White
+gain=none,salary<=50K
+loss=none
+loss=none,race=White
+loss=none,salary<=50K
+race=White
+salary<=50K
+
+Strong Associate Rules
+{country=United_States,gain=none}=>{loss=none} [ supp = 0.779 | conf = 0.948 | lift = 0.953 ]
+{country=United_States,loss=none}=>{gain=none} [ supp = 0.779 | conf = 0.912 | lift = 0.917 ]

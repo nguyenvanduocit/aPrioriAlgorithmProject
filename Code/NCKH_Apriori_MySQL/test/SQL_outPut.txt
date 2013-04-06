@@ -1,0 +1,65 @@
+Parameters
+Total itemset : 500
+minSupport : 0.7
+minConfidence : 0.9
+
+Frequent 1-itemset :
+country=United_States
+gain=none
+loss=none
+race=White
+salary<=50K
+Frequent 2-itemset  :
+country=United_States,gain=none
+country=United_States,loss=none
+country=United_States,race=White
+gain=none,loss=none
+gain=none,race=White
+gain=none,salary<=50K
+loss=none,race=White
+loss=none,salary<=50K
+Frequent 3-itemset  :
+country=United_States,gain=none,loss=none
+country=United_States,loss=none,race=White
+gain=none,loss=none,race=White
+gain=none,loss=none,salary<=50K
+
+All frequent itemset:
+country=United_States
+country=United_States,gain=none
+country=United_States,gain=none,loss=none
+country=United_States,loss=none
+country=United_States,loss=none,race=White
+country=United_States,race=White
+gain=none
+gain=none,loss=none
+gain=none,loss=none,race=White
+gain=none,loss=none,salary<=50K
+gain=none,race=White
+gain=none,salary<=50K
+loss=none
+loss=none,race=White
+loss=none,salary<=50K
+race=White
+salary<=50K
+
+Strong Associate Rules
+{country=United_States,gain=none}=>{loss=none} [ supp = 0.772 | conf = 0.941 ]
+{country=United_States,loss=none}=>{gain=none} [ supp = 0.772 | conf = 0.917 ]
+{country=United_States}=>{gain=none} [ supp = 0.82 | conf = 0.921 ]
+{country=United_States,race=White}=>{loss=none} [ supp = 0.716 | conf = 0.942 ]
+{loss=none,race=White}=>{country=United_States} [ supp = 0.716 | conf = 0.913 ]
+{country=United_States}=>{loss=none} [ supp = 0.842 | conf = 0.946 ]
+{race=White}=>{country=United_States} [ supp = 0.76 | conf = 0.913 ]
+{gain=none,race=White}=>{loss=none} [ supp = 0.72 | conf = 0.938 ]
+{loss=none,race=White}=>{gain=none} [ supp = 0.72 | conf = 0.918 ]
+{gain=none,salary<=50K}=>{loss=none} [ supp = 0.706 | conf = 0.954 ]
+{loss=none,salary<=50K}=>{gain=none} [ supp = 0.706 | conf = 0.954 ]
+{salary<=50K}=>{loss=none,gain=none} [ supp = 0.706 | conf = 0.912 ]
+{gain=none}=>{loss=none} [ supp = 0.866 | conf = 0.937 ]
+{loss=none}=>{gain=none} [ supp = 0.866 | conf = 0.919 ]
+{race=White}=>{gain=none} [ supp = 0.768 | conf = 0.923 ]
+{salary<=50K}=>{gain=none} [ supp = 0.74 | conf = 0.956 ]
+{race=White}=>{loss=none} [ supp = 0.784 | conf = 0.942 ]
+{salary<=50K}=>{loss=none} [ supp = 0.74 | conf = 0.956 ]
+Execution time is: 0.757 seconds.

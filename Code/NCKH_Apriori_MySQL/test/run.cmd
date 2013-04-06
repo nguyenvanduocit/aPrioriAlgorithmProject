@@ -1,0 +1,1 @@
+..\dist\NCKH_Apriori_MySQL.jar localhost nckh_apriori root null all SQL_outPut_101.txt 0.7 0.9
